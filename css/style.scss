@@ -36,12 +36,16 @@ position: relative;
    display: flex;
    align-items: center;
    column-gap: 1.626vw;
+
 }
 .nav-link {
   color: #FFF; 
    transition:all .4s;
    position: relative;
+   
+   
    &::before{
+      
       transition: all .6s;
       content: '';
       position: absolute;
@@ -71,7 +75,7 @@ position: relative;
       top: -200%;
       left: -5%;
       background: #fff;
-      width: 110%;
+      width: 115%;
       height: 305%;
    }
 }
@@ -174,7 +178,6 @@ position: relative;
 }
 .buildings-body{
    display: flex;
-   
    align-items: center;
    gap: 15px;
    flex-wrap: wrap;
@@ -204,12 +207,12 @@ position: relative;
    }
    
 }
-.buildings-item__image {
+.buildings-item__image ,
+.production-item__image {
 
    img{
-      width: 390px;
-      height: 250px;
-      
+      width: 23vw;
+      height: 16vw;
    }
 }
 .buildings-item__title {
@@ -275,6 +278,7 @@ position: relative;
 .production-body {
    margin-top: 1.626vw;
    display: flex;
+   
    align-items: center;
    gap: 15px;
    flex-wrap: wrap;
@@ -305,14 +309,7 @@ position: relative;
    }
    
 }
-.production-item__image {
 
-   img{
-      width: 390px;
-      height: 250px;
-      
-   }
-}
 .production-item__title {
    text-align: center;
    color: rgb(0, 0, 0);
@@ -561,7 +558,9 @@ h3{
       font-size: 1.8vw;
    }
 }
-
+.header-image{
+transform: translateY(8.065vw);
+}
 .logo{
    font-size: 3.3vw;
 }
@@ -569,7 +568,10 @@ h3{
 .phone{
    font-size: 2.3vw;
 }
-
+.buildings-body,
+.production-body{
+   justify-content: center;
+}
 .buildings-item__title,
 .production-item__title{
    font-size: 2.3vw;
@@ -734,6 +736,16 @@ h3{
          }
       }
    }
+ 
+   .buildings-item__image ,
+   .production-item__image{
+      
+      img{
+         width: 43.325vw;
+         height: 28.26vw;
+         
+      }
+   }
    .service-item__text{
       font-size: 1.8vw;
    }
@@ -761,4 +773,19 @@ margin-left: -1.5vw;
 .footer-dev{
    font-size: 1.8vw;
 }
+}
+
+@media (max-width: 468px) {
+   .header-image{
+      transform: translateY(25.065vw);
+      }
+   .buildings-item__image ,
+   .production-item__image{
+      
+      img{
+         width: 43vw;
+         height: 28.26vw;
+         
+      }
+   }
 }
